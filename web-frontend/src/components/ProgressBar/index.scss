@@ -1,0 +1,38 @@
+.percent {
+  margin-left: 1rem;
+  color: #999999;
+  font-size: 1rem;
+}
+.progress {
+  width: 100%;
+  height: 1rem;
+  margin: .5rem;
+  color: #fff;
+  // background-color: #f1f1f1;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+}
+.progress::before {
+  counter-reset: percent var(--percent);
+  /*文字显示*/
+  content: '';
+  display: inline-block;
+  /*宽度计算*/
+  width: calc(100% * var(--percent) / 100);
+  max-width: 100%;
+  height: inherit;
+  text-align: right;
+  background-color: var(--bgColor);
+  transition:width 2s;
+  animation: progress 1s ease forwards;
+  border-radius: 1rem;
+}
+@keyframes progress {
+  from {
+      width: 0;
+  }
+
+  to {
+      width: calc(100% * var(--percent) / 100);
+  }
+}

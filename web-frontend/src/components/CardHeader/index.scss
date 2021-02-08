@@ -1,0 +1,25 @@
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  > div:nth-child(1) {
+    font-size: 1.6rem;
+  }
+  > div:nth-child(2) {
+      display: flex;
+      color: #999999;
+      > div {
+        padding: .5rem 1rem;
+        background-color: #ededed;
+        border-radius: .4rem;
+      }
+      div:last-child {
+        margin-left: .4rem;
+      }
+      .active {
+        color: $primary-color;
+        background-color: lightblue;
+      }
+  }
+}

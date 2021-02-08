@@ -1,0 +1,29 @@
+.details-box {
+  margin-top:1rem;
+  padding: 2rem 1.6rem;
+  background-color: #ffffff;
+  .content {
+    margin-top: 1rem;
+  }
+  .details-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:4rem;
+    .type {
+      display: flex;
+      align-items: center;
+      width:20rem;
+      img {
+        margin-right: .4rem;
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+    .money {
+      width: 10rem;
+      text-align: right;
+      font-weight: bold;
+    }
+  }
+}

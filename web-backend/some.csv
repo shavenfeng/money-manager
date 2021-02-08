@@ -1,0 +1,14 @@
+code,shortName,typeName,description,type
+YONYOUN8,N8,用友N8,系统预置U8配置,true
+paramType,paramName,paramValue,description,edit,sort
+1,dbConnector,**********,数据库连接属性,false,0
+paramType,paramName,paramValue,description,edit,sort
+1,year,{当前年},年,false,1
+paramType,paramName,paramValue,description,edit,sort
+1,month,{当前月},月,false,2
+paramType,paramName,paramValue,description,edit,sort
+1,period,{当前期间},期间,false,3
+paramType,paramName,paramValue,description,edit,sort
+0,ssss,asdfsdf,asdfasdfsdf,true,4
+code,name,sourceType,sourceValue,tableName,queryDefClass,selfDefClass
+1234,1234,文件,,dcp_inf4e5a8bbb,fileGetData,null

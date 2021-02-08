@@ -1,0 +1,28 @@
+.input-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.6rem;
+  height: 5rem;
+  background-color: #ffffff;
+  .left {
+    display: flex;
+    div {
+      margin-right: .5rem;
+      padding: .5rem;
+      max-width: 4rem;
+      text-align: center;
+      color: #ffffff;
+      font-size: 1rem;
+      border-radius: 1.6rem;
+      background-color: $primary-color;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  .right {
+    color: $primary-color;
+    font-size: 2rem;
+  }
+}

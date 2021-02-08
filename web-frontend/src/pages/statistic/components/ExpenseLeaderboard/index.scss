@@ -1,0 +1,56 @@
+.leaderboard-box {
+  margin-top: 1rem;
+  padding: 1.6rem 2rem;
+  background-color: #ffffff;
+  .title {
+    font-size: 1.6rem;
+  }
+  .content {
+    margin-top: 1.5rem;
+    .expense-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 6rem;
+      .left {
+        display: flex;
+        align-items: center;
+        width: 60%;
+        .index {
+          font-weight: bold;
+          margin-right: 1rem;
+        }
+        .icon {
+          margin-right: 1rem;
+          width: 3rem;
+          height: 3rem;
+        }
+        .details {
+          font-size: 1.2rem;
+          line-height: 1.4rem;
+          .type {
+            font-weight: bold;
+          }
+          .remarks {
+            color: #999999;
+            width: 15rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+      }
+      .right {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        .money {
+          font-weight: bold;
+          text-align: right;
+        }
+        .time {
+          color: #999999;
+        }
+      }
+    }
+  }
+}

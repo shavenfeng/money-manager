@@ -1,0 +1,40 @@
+.total-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  background-color: #ffffff;
+  .month-picker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ededed;
+    padding: .8rem;
+    border-radius: .4rem;
+    .month-value {
+      font-weight: bold;
+    }
+  }
+  img {
+    margin-top: -0.2rem;
+    margin-left: .4rem;
+    width: 2rem;
+    height: 2rem;
+  }
+ .total-expense-text {
+   margin-top: 2rem;
+    color: $primary-color;
+    font-weight: bold;
+  }
+  .total-expense-value {
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: $primary-color;
+    font-weight: bold;
+  }
+  .total-income-text {
+    margin-top: 2rem;
+    color: #999999;
+  }
+}

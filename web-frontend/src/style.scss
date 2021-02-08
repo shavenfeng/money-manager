@@ -1,0 +1,29 @@
+$primary-color: #108ee9;
+$font-gray: #999999;
+$padding: 1.5rem;
+$margin: 1.5rem;
+$small-font-size: 1rem;
+
+html {
+  font-size: 10px;
+  .user-modal {
+    .am-list-line {
+      .am-input-labe {
+        font-size: 1rem;
+      }
+
+    }
+  }
+}
+
+.am-list-item .am-input-label, .am-list-item .am-input-control input {
+  font-size: 1.2rem !important;
+}
+
+.am-modal-button-group-h .am-modal-button {
+  font-size: 1.4rem !important;
+}
+
+.am-list-item.am-input-item:first-of-type {
+  margin-top: 1.2rem;
+}
