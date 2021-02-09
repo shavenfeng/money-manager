@@ -54,6 +54,20 @@ class UserController extends BaseController {
       this.error('账号或密码不正确!')
     }
   }
+  async getUserInfo() {
+    const { ctx } = this
+    const result = await ctx.service.user.getUserInfo()
+    const expenseCounts = await ctx.service.expense.getTotalCounts()
+    const incomeCounts = await ctx.service.income.getTotalCounts()
+    const days = Math.floor((Date.now() - new Date(result.createdAt).getTime()) / 1000 / 60 / 60 / 24)
+    const res = {
+      username: result.username,
+      avatar: result.avatar,
+      days,
+      counts: expenseCounts + incomeCounts
+    }
+    this.success(res)
+  }
 }
 
 module.exports = UserController

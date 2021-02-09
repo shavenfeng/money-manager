@@ -2,6 +2,11 @@ import { axiosGet, axiosPost } from './httpRequest'
 
 const api = (url:string) => `/api${url}`
 
+export interface Response {
+  data: any
+  code: number
+}
+
 interface RegisterParams {
   phone: string
   password: string
@@ -74,3 +79,5 @@ export const getComposition = (params: GetCompositionParams) => axiosGet(api('/c
 export const getCompareDayData = (params: CompareParams) => axiosGet(api('/common/getCompareDayData'), params)
 
 export const getCompareMonthData = (params: CompareParams) => axiosGet(api('/common/getCompareMonthData'), params)
+
+export const getUserInfo = () => axiosGet(api('/user/getUserInfo'))

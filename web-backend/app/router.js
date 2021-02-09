@@ -27,4 +27,6 @@ module.exports = app => {
   router.get('/api/common/getComposition', controller.common.getComposition)
   router.get('/api/common/getCompareDayData', controller.common.getCompareDayData)
   router.get('/api/common/getCompareMonthData', controller.common.getCompareMonthData)
+
+  router.get('/api/user/getUserInfo', controller.user.getUserInfo)
 }

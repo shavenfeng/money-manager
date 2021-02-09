@@ -1,0 +1,17 @@
+.counts-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $primary-color;
+  > div {
+    padding: 2rem 0;
+    width: 10rem;
+    text-align: center;
+    color: #ffffff;
+    div:first-child {
+      margin-bottom: 1rem;
+      font-weight: bold;
+      font-size: 2rem;
+    }
+  }
+}

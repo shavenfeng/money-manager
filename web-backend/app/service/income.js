@@ -8,6 +8,12 @@ class IncomeService extends BaseService {
       return await ctx.model.Income.create({ ...params })
     })
   }
+  async getTotalCounts() {
+    return this.run(async ctx => {
+      const ret = await ctx.model.Income.findAll()
+      return ret.length
+    })
+  }
 }
 
 module.exports = IncomeService

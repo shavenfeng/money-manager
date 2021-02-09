@@ -22,6 +22,16 @@ class UserService extends BaseService {
       })
     })
   }
+  async getUserInfo() {
+    return this.run(async ctx => {
+      return await ctx.model.User.findOne({
+        where: {
+          id: ctx.userId
+        },
+        attributes: ['id', 'avatar', 'username', 'createdAt']
+      })
+    })
+  }
 }
 
 module.exports = UserService

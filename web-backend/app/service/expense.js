@@ -97,6 +97,12 @@ class ExpenseService extends BaseService {
       }
     })
   }
+  async getTotalCounts() {
+    return this.run(async ctx => {
+      const ret = await ctx.model.Expense.findAll()
+      return ret.length
+    })
+  }
 }
 
 module.exports = ExpenseService

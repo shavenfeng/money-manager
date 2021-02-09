@@ -3,15 +3,22 @@ import { Icon } from 'antd-mobile'
 import avatarImg from '../../../../static/avatar.jpg'
 import './index.scss'
 
-const Avatar: React.FC = () => {
+interface AvatarProps {
+  avatarImg: string
+  nikename: string
+}
+
+const Avatar: React.FC<AvatarProps> = props => {
   return <div className="avatar-box">
-    <div className="left">
-      <img src={avatarImg} alt="" />
-    </div>
-    <div className="right">
-      <div className="nikename">小蚊子</div>
-      <div className="account-manage">账号管理 <Icon type="right" size="sm" /></div>
-    </div>
+    <div className="avatar"
+      style={
+        {
+          backgroundImage: `url(${props.avatarImg})`,
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat'
+        }
+      }></div>
+    <div className="nikename">{props.nikename}</div>
   </div>
 }
 
